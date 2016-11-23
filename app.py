@@ -87,6 +87,6 @@ if __name__ == "__main__":
         (r"/myform", MyFormHandler),
         (r'/ws', EchoWebSocket)
         ], debug = True, static_path = os.path.join(os.path.dirname(__file__), "static"))
-    app.listen(80)
+    app.listen(8000)
     tornado.ioloop.IOLoop.current().start()
     
