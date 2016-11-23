@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Genetics Algorithm</title>
+	<style type="text/css">
+		body{
+			max-width: 650px;
+			margin: 40px auto;
+			line-height: 1.6;
+			font-size: 18px;
+			color: #444
+		}
+
+		h1,h2,h3{
+			line-height: 1.2
+		}
+
+		ol.u {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			padding-top: 15px;
+		}
+	</style>
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</head>
+<body>
+	<header>
+		<h1>Not we are going to introduce the genetics algorithm.</h1>
+	</header>
+	<p>Given a goal string i can transform a randomly generated string to it.</p>
+	<p>Please input your desired string down here:</p>
+	<div id="app">
+	  <input v-model="message">
+	  <button v-on:click="calculation">Perform Genetics Algorithm</button>
+	  <ol class="u">
+	    <li v-for="todo in todos">
+	      {{! todo.text }}
+	    </li>
+	  </ol>
+	</div>
+
+
+
+	<script type="text/javascript" src="{{ static_url("hello.js") }}"></script>
+</body>
+</html>
