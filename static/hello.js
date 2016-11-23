@@ -11,7 +11,7 @@ var app = new Vue({
   },
   methods: {
   	calculation: function(){
-  		var ws = new WebSocket("ws://162.243.115.26:8200/ws");
+  		var ws = new WebSocket("ws://162.243.115.26:80ws");
       ws.onopen = function() {
          ws.send(app.message);
       };
